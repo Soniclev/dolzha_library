@@ -36,11 +36,6 @@ reports:
       - "coverage/*"
     base-directory: 'test-reports'
     discard-paths: yes
-  wheel:
-    files:
-      - "*.whl"
-    base-directory: 'dist'
-    discard-paths: yes
   report:
     files:
       - 'junit.xml'
@@ -49,3 +44,10 @@ reports:
     base-directory: 'test-reports'
     discard-paths: yes
     file-format: JunitXml
+
+artifacts:
+  wheel:
+    files:
+      - "*.whl"
+    base-directory: 'dist'
+    discard-paths: yes
