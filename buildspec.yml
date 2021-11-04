@@ -6,6 +6,7 @@ phases:
       python: 3.9
   pre_build:
     commands:
+      - apt-get update
       - apt-get install -y python3-venv
       - python3 -m venv venv
       - . venv/bin/activate
